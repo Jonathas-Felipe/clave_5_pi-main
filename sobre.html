@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png" />
+</head>
+
+<body onload="verificaLogado(); obtemDados('clientes')" class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <img src="images/icon.png" alt="Clave-5" title="Clave-5" height="50" width="50">
+            <a class="navbar-brand branco" href="#">Clave-5</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link branco" href="menu.html"><i class="bi bi-house"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link branco" href="clientes.html"><i class="bi bi-cart4"></i></i> Loja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link branco active" href="sobre.html" aria-current="page"><i class="bi bi-person-circle"></i></i> Sobre nós</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-right">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+
+                    <div id="imagemUsuario"></div>
+                    <li class="nav-item">
+                        <button class="btn  btn-block bg-light" onclick="logoutFirebase()"><i class="bi bi-box-arrow-in-right"></i> Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 window" style="background-color:rgb(197, 255, 195)">
+
+            <br>
+            <center>
+                <h1>👤 Venha conhecer a Clave-5!! 🎵</h1>
+            </center>
+            <br>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 window fundo-verde-escuro">
+
+            <br>
+            <center>
+                <img src="images/Logo.png" alt="Logo" title="Logo" height="350" width="350">
+                <br><br>
+            </center>
+
+            <center>
+                <h3 class="branco"> "Uma melodia feita com o coração pode fazer grandes mudanças."</h3>
+            </center>
+
+            <pre>
+            <h4 class="branco">    
+    A Clave-5 é uma comunidade no qual procura espalhar pelo mundo a filosofia da
+música, no qual traz harmonia na vida diante dos conflitos que são apresentados no
+dia a dia.
+    São oferecidos instrumentos para qualquer um que esteja interessado a se jun-
+tar a essa comunidade, além de eventos únicos para estar conectando e aprimorando
+cada vez mais seu traço musical.
+    A Clave-5 também segue segmentos ESG, evitando corromper o ambiente a nossa
+volta e sempre mantendo relações agradáveis uns com outros, pois a melodia pode 
+ser bem aproveitada se estivermos de bem e coração aberto para senti-la, ainda
+mais num ambiente puro e confortável do próprio planeta em que vivemos.
+    Nossa comunidade não tem requisito pessoal, apenas que esteja com condições 
+em nos ajudar a construir um mundo melhor e mais feliz de se viver!
+            </h4>
+            </pre>
+
+            <center>
+                <h3 class="branco"> "A melodia se fortalece quando mais gente se junta a banda!"</h3>
+                <h3 class="branco"> O que está esperando? ;)</h3>
+            </center>
+            <br>
+        </div>
+    </div>
+    </div>
+
+    <br><br>
+    <h5 class="final"><br>Fatec Itu. Todos os direitos reservados. @Clave-5<br><br></h5>
+
+
+    <!-- Carregando os scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-storage-compat.js"></script>
+    <!-- Carregamento dos scripts do projeto-->
+    <script src="js/firebase/firebase.js"></script>
+    <script src="js/firebase/authentication.js"></script>
+    <script src="js/firebase/dados.js"></script>
+    <script src="js/util/alerta.js"></script>
+
+
+</body>
+
+</html>
